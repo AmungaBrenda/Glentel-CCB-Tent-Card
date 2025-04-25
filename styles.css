@@ -385,3 +385,99 @@ td.highlight {
         height: auto;
     }
 }
+
+/* Add these responsive styles to your existing CSS */
+
+/* For tablets and smaller desktop screens */
+@media screen and (max-width: 1024px) {
+    .tent-card {
+      width: 95%;
+      height: auto;
+      flex-direction: column;
+    }
+    
+    .cover, .inside-left, .inside-right {
+      width: 100%;
+    }
+  }
+  
+  /* For mobile phones */
+  @media screen and (max-width: 768px) {
+    .tent-card {
+      width: 100%;
+      box-shadow: none;
+    }
+    
+    .cover-content {
+      padding: 25px;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    .comparison {
+      flex-direction: column;
+    }
+    
+    .comparison-item {
+      margin: 10px 0;
+    }
+    
+    .formulations {
+      grid-template-columns: 1fr;
+    }
+    
+    table {
+      font-size: 12px;
+    }
+    
+    th, td {
+      padding: 8px 5px;
+    }
+    
+    .case {
+      flex-direction: column;
+    }
+    
+    .case-icon {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Print media query remains the same */
+  @media print {
+    /* Your existing print styles */
+  }
+  
+  /* For very small screens */
+  @media screen and (max-width: 480px) {
+    th, td {
+      padding: 6px 3px;
+      font-size: 11px;
+    }
+    
+    .inside-left, .inside-right {
+      padding: 15px;
+    }
+    
+    h2 {
+      font-size: 18px;
+    }
+    
+    h3 {
+      font-size: 16px;
+    }
+  }
+  
+  /* For landscape orientation on mobile */
+  @media screen and (max-width: 896px) and (orientation: landscape) {
+    .tent-card {
+      flex-direction: row;
+      height: auto;
+    }
+    
+    .cover, .inside-left, .inside-right {
+      width: 33.33%;
+    }
+  }
