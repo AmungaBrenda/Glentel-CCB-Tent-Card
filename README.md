@@ -1,5 +1,3 @@
-# Glentel-CCB-Tent-Card
-
 # Glentel CCB Tent Card Design 🏥💊
 
 ![Glentel CCB](https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://glentel-ccb.com/evidence)
